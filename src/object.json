@@ -1,0 +1,62 @@
+
+[
+{
+    "name": "object1",
+    "produktnummer": 1,
+    "pris": 10,
+    "text":"Detta är objekt1"
+},
+{
+    "name": "object2",
+    "produktnummer": 2,
+    "pris": 20,
+    "text":"Detta är objekt2"
+},
+{
+    "name": "object3",
+    "produktnummer": 3,
+    "pris": 30,
+    "text":"Detta är objekt3"
+},
+{
+    "name": "object4",
+    "produktnummer": 4,
+    "pris": 40,
+    "text":"Detta är objekt4"
+},
+{
+    "name": "object5",
+    "produktnummer": 5,
+    "pris": 50,
+    "text":"Detta är objekt5"
+},
+{
+    "name": "object6",
+    "produktnummer": 6,
+    "pris": 60,
+    "text":"Detta är objekt6"
+},
+{
+    "name": "object7",
+    "produktnummer": 7,
+    "pris": 70,
+    "text":"Detta är objekt7"
+},
+{
+    "name": "object8",
+    "produktnummer": 8,
+    "pris": 80,
+    "text":"Detta är objekt8"
+},
+{
+    "name": "object9",
+    "produktnummer": 9,
+    "pris": 90,
+    "text":"Detta är objekt9"
+},
+{
+    "name": "object10",
+    "produktnummer": 10,
+    "pris": 100,
+    "text":"Detta är objekt10"
+}]

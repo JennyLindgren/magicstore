@@ -1,4 +1,27 @@
 
 .Searchresult{
+    color: black;
+    padding:40px;
+    
+}
+p{
     color: blue;
+}
+.box img {
+    width: 300px;
+  }
+.box{
+    border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
