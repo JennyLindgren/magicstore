@@ -1,44 +1,42 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./searchresult.css";
-
+import { ShopContext } from "./contex/shop-contex";
+import { PRODUCTS } from "./products";
+import Modal from "./modal";
 // https://dummyjson.com/products
 
 const Searchresult = (props) => {
+  const searchedResult = PRODUCTS.filter(product => {
+    if(props.searchData === '') {
+      return '';
+    } else {
+      return product.productName.toLowerCase().includes(props.searchData)
+    }
+  })
+    
+    
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="Searchresult">
       <h2>Searchresult</h2>
-      {props.searchData.map((object) => {
+      {searchedResult.map((product) => {
         return (
-          <div className="box" key={object.id}>
-            <img src={object.images[0]}></img>
-            <h4>{object.title}</h4>
-            {object.price} kr
-            <p>Mer information</p>
+          <div className="box" key={product.id}>
+            <img src={product.productImage} alt=""></img>
+            <h4>{product.productName}</h4>
+            {product.price} kr
+            <Modal product={product} />
+            <button
+              className="addToCartBttn"
+              onClick={() => addToCart(product.id)}
+            >
+              Lägg i varukorg
+            </button>
           </div>
         );
       })}
     </div>
-    // <tr>
-    //   <td>{props}</td>
-    //   <td>{props}</td>
-    //   <td>{props}</td>
-
-    // </tr>
   );
-
-  // return (
-  //   <div className="Searchresult">
-  //     <h2>Searchresult</h2>
-  //     <br /> <br />
-  //     {Object.map((object) => {
-  //       return (
-  //         <div className="box" key={object.produktnummer}>
-  //           {object.name}
-  //         </div>
-  //       );
-  //     })}
-  //   </div>
-  // );
 };
 
 export default Searchresult;

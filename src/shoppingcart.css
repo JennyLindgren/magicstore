@@ -1,3 +1,15 @@
 .Shoppingcart{
-    color: red;
+    color: black;
+}
+.countHandler input {
+width: 10%;
+text-align: center;
+}
+.cartItem {
+    padding-top: 20px;
+}
+
+.cartItem img {
+    width: 150px;
+    
 }

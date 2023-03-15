@@ -7,7 +7,7 @@ function Searchbar(props) {
   const [search, setSearch] = useState("");
 
   const onClick = () => {
-    props.getData(search);
+    props.handleClick(search);
   };
 
   return (

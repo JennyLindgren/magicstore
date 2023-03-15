@@ -1,27 +1,26 @@
 
 .Searchresult{
-    color: black;
-    padding:40px;
-    
+    color: black;   
 }
-p{
-    color: blue;
-}
+
 .box img {
-    width: 300px;
+    width: 200px;
   }
 .box{
     border-radius: 15px;
-  width: 300px;
-  height: 350px;
-  margin: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding: 25px;
 }
+.addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }

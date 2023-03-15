@@ -11,3 +11,6 @@
 .Search input {
     border: none;
 }
+.Search input:focus {
+    outline: none;
+}
