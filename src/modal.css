@@ -1,59 +1,67 @@
+.link {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* Overlay för att mörklägga bakgrunden */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modalruta */
+.modal {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+/* Stängknapp */
+.modal-header button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Animera in och ut */
+.modal {
+  animation: slideIn 0.3s ease-out;
+}
+
+.modal-overlay.fade-out .modal {
+  animation: slideOut 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
   }
-  
-  /* Modalruta */
-  .modal {
-    position: relative;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    padding: 2rem;
-    max-width: 90%;
-    max-height: 90%;
-    overflow: auto;
+  to {
+    transform: translateY(0);
   }
-  
-  /* Stängknapp */
-  .modal-header button {
-    position: absolute;
-    top: 0;
-    right: 0;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
   }
-  
-  /* Animera in och ut */
-  .modal {
-    animation: slideIn 0.3s ease-out;
+  to {
+    transform: translateY(-100%);
   }
-  
-  .modal-overlay.fade-out .modal {
-    animation: slideOut 0.3s ease-out;
-  }
-  
-  @keyframes slideIn {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideOut {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-100%);
-    }
-  }
+}

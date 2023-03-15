@@ -1,7 +1,7 @@
 .Searchbar{
     display: flex;
     justify-content: center;
-    color: green;
+    color: black;
     min-height: 25px;
 }
 .Search {

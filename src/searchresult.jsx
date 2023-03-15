@@ -3,8 +3,8 @@ import "./searchresult.css";
 import { ShopContext } from "./contex/shop-contex";
 import { PRODUCTS } from "./products";
 import Modal from "./modal";
-// https://dummyjson.com/products
 
+// filtrerar genom produkterna 
 const Searchresult = (props) => {
   const searchedResult = PRODUCTS.filter(product => {
     if(props.searchData === '') {

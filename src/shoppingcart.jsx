@@ -4,8 +4,7 @@ import { ShopContext } from "./contex/shop-contex";
 import { ShoppingCart } from "phosphor-react";
 import { PRODUCTS } from "./products";
 
-function Shoppingcart(props) {
-  // const { id, productName, price, productImage } = PRODUCTS;
+function Shoppingcart() {
   const {
     addToCart,
     removeFromCart,
@@ -23,7 +22,7 @@ function Shoppingcart(props) {
           if (cartItems[product.id]) {
             return (
               <div className="cartItem" key={product.id}>
-                <img src={product.productImage} />
+                <img src={product.productImage} alt="" />
                 <div className="description">
                   <p>
                     <b>{product.productName}</b>

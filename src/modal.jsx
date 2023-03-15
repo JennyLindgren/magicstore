@@ -14,7 +14,7 @@ function Modal({ product }) {
 
   return (
     <>
-      <button onClick={handleShowModal}>Visa produktbeskrivning</button>
+      <button className="link" onClick={handleShowModal}>Visa produktbeskrivning</button>
 
       {/* Visa modalen om showModal är true */}
       {showModal && (
